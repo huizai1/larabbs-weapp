@@ -1,6 +1,13 @@
-import Vuex from '@wepy/x'
+import Vuex from '@wepy/x';
+import users from './modules/user'
 
 export default new Vuex.Store({
+  modules: {
+    users,
+  }
+})
+
+/*export default new Vuex.Store({
   state: {
     counter: 0
   },
@@ -25,4 +32,4 @@ export default new Vuex.Store({
       }, 1000)
     }
   }
-})
+})*/
